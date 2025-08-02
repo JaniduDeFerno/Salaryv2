@@ -33,13 +33,13 @@ else:
 # Employee Types and Presets with explicit float values
 employee_type_presets = {
     "Working Staff (BULB)": {
-        "Basic Salary": 24000.0, "Normal Pay Rate": 1080.0, "Sunday Pay Rate": 1620.0, "Attendance Bonus": 1500.0},
+        "Basic Salary": 23000.0, "Normal Pay Rate": 1080.0, "Sunday Pay Rate": 1620.0, "Attendance Bonus": 1500.0},
     "Employee (ORIN)": {
-        "Basic Salary": 24000.0, "Normal Pay Rate": 1080.0, "Sunday Pay Rate": 1620.0, "Attendance Bonus": 3000.0},
+        "Basic Salary": 23000.0, "Normal Pay Rate": 1080.0, "Sunday Pay Rate": 1620.0, "Attendance Bonus": 3000.0},
     "Employee (Nescafe)": {
-        "Basic Salary": 24000.0, "Normal Pay Rate": 1080.0, "Sunday Pay Rate": 1620.0, "Attendance Bonus": 3000.0},
+        "Basic Salary": 23000.0, "Normal Pay Rate": 1080.0, "Sunday Pay Rate": 1620.0, "Attendance Bonus": 3000.0},
     "Employee (Siyallanka)": {
-        "Basic Salary": 24000.0, "Normal Pay Rate": 1080.0, "Sunday Pay Rate": 1620.0, "Attendance Bonus": 3000.0}
+        "Basic Salary": 23000.0, "Normal Pay Rate": 1080.0, "Sunday Pay Rate": 1620.0, "Attendance Bonus": 3000.0}
 }
 
 # --- Salary Data Form ---
@@ -75,7 +75,7 @@ if employee_names:
     bra = st.number_input(
         "BRA",
         min_value=0.0,
-        value=get_val("BRA", 3000.0)
+        value=get_val("BRA", 4000.0)
     )
     salary_for_epf = basic_salary + bra
     st.markdown(f"**Salary for EPF:** Rs. `{salary_for_epf:,.2f}`")
